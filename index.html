@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0">
+    <link rel="stylesheet" href="./style.css">
+    <title>ArtsyCanva: Desenhe e Crie como um Artista!</title>
+</head>
+<body>
+    <section class="container">
+        <h1>ArtsyCanva: Desenhe e Crie como um Artista!</h1>
+        <div class="canvas-container">
+            <canvas width="900" height="600"></canvas>
+        </div>
+    </section>
+    <section class="tool-box-container">
+        <div class="tool-box">
+            <button class="button__tool" data-action="brush">
+                <span class="material-symbols-outlined">brush</span>
+            </button>
+            <button class="button__tool" data-action="rubber">
+                <span class="material-symbols-outlined">ink_eraser</span>
+            </button>
+            <button class="button__tool">
+                <input type="color" class="input__color">
+            </button>
+        </div>
+        <div class="tool-box">
+            <button class="button__size" data-size="5" title="Lápis 5px">
+                <span class="stroke"></span>
+            </button>
+            <button class="button__size" data-size="10" title="Lápis 10px">
+                <span class="stroke"></span>
+            </button>
+            <button class="button__size" data-size="20" title="Lápis 20px">
+                <span class="stroke"></span>
+            </button>
+            <button class="button__size" data-size="30" title="Lápis 30px">
+                <span class="stroke"></span>
+            </button>
+        </div>
+        <div class="tool-box delete-box">
+            <button class="button__tool button__clear">
+                <span class="material-symbols-outlined">delete</span>
+            </button>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
